@@ -22,7 +22,7 @@ db.oms_company_address.insertMany ( [
 
 2. POSTMAN
    - GET
-      - GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
+      - **GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe**
       - response type: 200 OK
       - response body
 ```
@@ -61,12 +61,12 @@ db.oms_company_address.insertMany ( [
 }
 ```
       - ----------------------------------------------------------------------
-      -- GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87dec
+      - **GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87dec**
       - response type: 404 Not Found
       - no response body
       - ----------------------------------------------------------------------
 
-      - GET https://web.postman.co/workspace
+      - **GET https://web.postman.co/workspace**
       - response type: 401 Unauthorized
       - response body: 
 ```
@@ -78,7 +78,7 @@ db.oms_company_address.insertMany ( [
 }
 ```
       - --------------------------------------------------------------
-      - GET https://ghibliapi.herokuapp.com/Vehicles
+      - **GET https://ghibliapi.herokuapp.com/Vehicles**
       - response type: 200 OK
       - response body: 
 ```
@@ -122,7 +122,7 @@ db.oms_company_address.insertMany ( [
 ]
 ```
       - -----------------------------------------------------------------
-      - GET https://www.liaoxuefeng.com/wiki
+      - **GET https://www.liaoxuefeng.com/wiki**
       - response type: 404 NOT FOUND
       - response body:
 ```
@@ -137,7 +137,7 @@ db.oms_company_address.insertMany ( [
 
 
    - post
-      - POST https://ghibliapi.herokuapp.com/Vehicles
+      - **POST https://ghibliapi.herokuapp.com/Vehicles**
       - request body
 ```
 
@@ -171,7 +171,7 @@ db.oms_company_address.insertMany ( [
     }
 ```
       - --------------------------------------------------------------------
-      - POST https://www.liaoxuefeng.com/wiki
+      - **POST https://www.liaoxuefeng.com/wiki**
       - response type: 404 NOT FOUND
       - response body:
 ```
@@ -184,15 +184,15 @@ db.oms_company_address.insertMany ( [
 ```
       - ---------------------------------------------------------------------
 
-      - POST https://ghibliapi.herokuapp.com/#section/Use-Case
+      - **POST https://ghibliapi.herokuapp.com/#section/Use-Case**
       - response type: 404 NOT FOUND
       - response body:
 ```
 {}
 ```
-            - ------------------------------------------------------------------
+      - ------------------------------------------------------------------
 
-      - POST https://ghibliapi.herokuapp.com/Species
+      - **POST https://ghibliapi.herokuapp.com/Species**
       - response type: 201 Created
       - response body:
 ```
@@ -203,7 +203,7 @@ db.oms_company_address.insertMany ( [
       - ----------------------------------------------------------------------
 
 
-      - POST https://ghibliapi.herokuapp.com/Species
+      - **POST https://ghibliapi.herokuapp.com/Species**
       - request body
 ```
 {
@@ -220,7 +220,7 @@ db.oms_company_address.insertMany ( [
       - ----------------------------------------------------------------------
    
    - put
-      - PUT https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT/new.html
+      - **PUT https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT/new.html**
       - request body:none
       - response type: 403 Forbidden
       - response body
@@ -256,7 +256,7 @@ Request ID: RF56dpWkEoFOhBS-hElmTUtLUiWtsDoksfii0Z1_nbble9TWxtAo3Q==
 </HTML>
 ```
       - ----------------------------------------------------------------------
-      - PUT https://ghibliapi.herokuapp.com/Films
+      - **PUT https://ghibliapi.herokuapp.com/Films**
       - request body:
 ```
  {
@@ -300,7 +300,7 @@ Request ID: RF56dpWkEoFOhBS-hElmTUtLUiWtsDoksfii0Z1_nbble9TWxtAo3Q==
 ```
       - ----------------------------------------------------------------------
 
-      - PUT  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
+      - **PUT  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe**
       - request body: none
       - response type: 200 OK
       - response body:
@@ -312,7 +312,7 @@ Request ID: RF56dpWkEoFOhBS-hElmTUtLUiWtsDoksfii0Z1_nbble9TWxtAo3Q==
       - ----------------------------------------------------------------------
 
    - delete
-      - DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
+      - **DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe**
       - request body: none
       - response type: 200 OK
       - response body:
@@ -320,7 +320,7 @@ Request ID: RF56dpWkEoFOhBS-hElmTUtLUiWtsDoksfii0Z1_nbble9TWxtAo3Q==
 {}
 ```
       - ----------------------------------------------------------------------
-      - DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87ABF
+      - **DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87ABF**
       - request body: none
       - response type: 404 Not Found
       - response body:
