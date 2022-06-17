@@ -3,6 +3,12 @@
    - mongodb
       - Create `test`DB: `use test`
       - Create `oms_company_address` collection: `db.createCollection("oms_company_address")`
+      - Read one entry from `oms_company_address` collection: `db.oms_company_address.findOne()`;
+      - Read all entries from `oms_company_address`: `db.oms_company_address.find()`;
+      - Update one entry from `oms_company_address`collection:
+`db.oms_company_address.update({"id":1},{$set:{"send_status":0}} )`;
+      - Remove one entry from `oms_company_address`collection :
+`db.oms_company_address.remove({"id":1})`;
       - Insert few random entries to `oms_company_address` collection (method: insert() )
 ```
 db.oms_company_address.insertMany ( [
@@ -12,12 +18,7 @@ db.oms_company_address.insertMany ( [
       { id: 4, address_name: "4th street", send_status: 0, receive_status: 0, name: "Dave", phone: "444-444-4444", province: "D", city: "D", region: "D", detail_address: "4th AVE" },
       { id: 5, address_name: "5th street", send_status: 1, receive_status: 0, name: "Emma", phone: "555-555-5555", province: "E", city: "E", region: "E", detail_address: "5th AVE" } ] );
 ```
-      - Read one entry from `oms_company_address` collection: `db.oms_company_address.findOne()`;
-      - Read all entries from `oms_company_address`: `db.oms_company_address.find()`;
-      - Update one entry from `oms_company_address`collection
-`db.oms_company_address.update({"id":1},{$set:{"send_status":0}} )`;
-      - Remove one entry from `oms_company_address`collection :
-`db.oms_company_address.remove({"id":1})`;
+      
 
 2. POSTMAN
    - GET
@@ -58,7 +59,7 @@ db.oms_company_address.insertMany ( [
     ],
     "url": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe"
 }
-    ```
+```
       - ----------------------------------------------------------------------
       -- GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87dec
       - response type: 404 Not Found
@@ -132,7 +133,7 @@ db.oms_company_address.insertMany ( [
     "path": "/wiki"
 }
 ```
-       ---------------------------------------------------------------------
+       
 
 
    - post
