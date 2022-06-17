@@ -1,9 +1,9 @@
 1. Database
-   -- for mysql, please check the coding part
-   -- mongodb
-      -- Create `test`DB: `use test`
-      -- Create `oms_company_address` collection: `db.createCollection("oms_company_address")`
-      -- Insert few random entries to `oms_company_address` collection (method: insert() )
+   - for mysql, please check the coding part
+   - mongodb
+      - Create `test`DB: `use test`
+      - Create `oms_company_address` collection: `db.createCollection("oms_company_address")`
+      - Insert few random entries to `oms_company_address` collection (method: insert() )
 ```
 db.oms_company_address.insertMany ( [
       { id: 1, address_name: "1st street", send_status: 1, receive_status: 1, name: "Alice", phone: "111-111-1111", province: "A", city: "A", region: "A", detail_address: "1st AVE" },
@@ -12,18 +12,18 @@ db.oms_company_address.insertMany ( [
       { id: 4, address_name: "4th street", send_status: 0, receive_status: 0, name: "Dave", phone: "444-444-4444", province: "D", city: "D", region: "D", detail_address: "4th AVE" },
       { id: 5, address_name: "5th street", send_status: 1, receive_status: 0, name: "Emma", phone: "555-555-5555", province: "E", city: "E", region: "E", detail_address: "5th AVE" } ] );
 ```
-      -- Read one entry from `oms_company_address` collection: `db.oms_company_address.findOne()`;
-      -- Read all entries from `oms_company_address`: `db.oms_company_address.find()`;
-      -- Update one entry from `oms_company_address`collection
+      - Read one entry from `oms_company_address` collection: `db.oms_company_address.findOne()`;
+      - Read all entries from `oms_company_address`: `db.oms_company_address.find()`;
+      - Update one entry from `oms_company_address`collection
 `db.oms_company_address.update({"id":1},{$set:{"send_status":0}} )`;
-      -- Remove one entry from `oms_company_address`collection :
+      - Remove one entry from `oms_company_address`collection :
 `db.oms_company_address.remove({"id":1})`;
 
 2. POSTMAN
-   -- GET
-      -- GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
-      -- response type: 200 OK
-      -- response body
+   - GET
+      - GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
+      - response type: 200 OK
+      - response body
 ```
 {
     "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
@@ -59,15 +59,15 @@ db.oms_company_address.insertMany ( [
     "url": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe"
 }
     ```
-      -- ----------------------------------------------------------------------
+      - ----------------------------------------------------------------------
       -- GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87dec
-      -- response type: 404 Not Found
-      -- no response body
-      -- ----------------------------------------------------------------------
+      - response type: 404 Not Found
+      - no response body
+      - ----------------------------------------------------------------------
 
-      -- GET https://web.postman.co/workspace
-      -- response type: 401 Unauthorized
-      -- response body: 
+      - GET https://web.postman.co/workspace
+      - response type: 401 Unauthorized
+      - response body: 
 ```
 {
     "error": {
@@ -76,10 +76,10 @@ db.oms_company_address.insertMany ( [
     }
 }
 ```
-      -- --------------------------------------------------------------
-      -- GET https://ghibliapi.herokuapp.com/Vehicles
-      -- response type: 200 OK
-      -- response body: 
+      - --------------------------------------------------------------
+      - GET https://ghibliapi.herokuapp.com/Vehicles
+      - response type: 200 OK
+      - response body: 
 ```
 [
     {
@@ -120,10 +120,10 @@ db.oms_company_address.insertMany ( [
     }
 ]
 ```
-      -- -----------------------------------------------------------------
-      -- GET https://www.liaoxuefeng.com/wiki
-      -- response type: 404 NOT FOUND
-      -- response body:
+      - -----------------------------------------------------------------
+      - GET https://www.liaoxuefeng.com/wiki
+      - response type: 404 NOT FOUND
+      - response body:
 ```
 {
     "timestamp": "2022-06-17T18:53:32.547+00:00",
@@ -132,12 +132,12 @@ db.oms_company_address.insertMany ( [
     "path": "/wiki"
 }
 ```
-      -- ---------------------------------------------------------------------
+       ---------------------------------------------------------------------
 
 
-   -- post
-      --POST https://ghibliapi.herokuapp.com/Vehicles
-      --request body
+   - post
+      - POST https://ghibliapi.herokuapp.com/Vehicles
+      - request body
 ```
 
  {
@@ -152,8 +152,8 @@ db.oms_company_address.insertMany ( [
         ],
         "url": "https://ghibliapi.herokuapp.com/vehicles/4e09b023-f650-4747-9ab9-eacf14540abc"
     }
-      -- response type: 201 Created
-      -- response body:
+      - response type: 201 Created
+      - response body:
 ```
   
  {
@@ -169,10 +169,10 @@ db.oms_company_address.insertMany ( [
         "url": "https://ghibliapi.herokuapp.com/vehicles/4e09b023-f650-4747-9ab9-eacf14540abc"
     }
 ```
-      -- --------------------------------------------------------------------
-      -- POST https://www.liaoxuefeng.com/wiki
-      -- response type: 404 NOT FOUND
-      -- response body:
+      - --------------------------------------------------------------------
+      - POST https://www.liaoxuefeng.com/wiki
+      - response type: 404 NOT FOUND
+      - response body:
 ```
 {
     "timestamp": "2022-06-17T18:56:01.909+00:00",
@@ -181,48 +181,48 @@ db.oms_company_address.insertMany ( [
     "path": "/wiki"
 }
 ```
-      -- ---------------------------------------------------------------------
+      - ---------------------------------------------------------------------
 
-      -- POST https://ghibliapi.herokuapp.com/#section/Use-Case
-      -- response type: 404 NOT FOUND
-      -- response body:
+      - POST https://ghibliapi.herokuapp.com/#section/Use-Case
+      - response type: 404 NOT FOUND
+      - response body:
 ```
 {}
 ```
-            -- ------------------------------------------------------------------
+            - ------------------------------------------------------------------
 
-      -- POST https://ghibliapi.herokuapp.com/Species
-      -- response type: 201 Created
-      -- response body:
+      - POST https://ghibliapi.herokuapp.com/Species
+      - response type: 201 Created
+      - response body:
 ```
 {
     "id": "203c49c5-7eed-4c98-ade7-7d00b802511b"
 }
 ```
-      -- ----------------------------------------------------------------------
+      - ----------------------------------------------------------------------
 
 
-      -- POST https://ghibliapi.herokuapp.com/Species
-      -- request body
+      - POST https://ghibliapi.herokuapp.com/Species
+      - request body
 ```
 {
     "id": "203c49c5-7eed-4c98-ade7-7d00b8025220"
 }
 ```
-      -- response type: 201 Created
-      -- response body:
+      - response type: 201 Created
+      - response body:
 ```
 {
     "id": "203c49c5-7eed-4c98-ade7-7d00b802511b"
 }
 ```
-      -- ----------------------------------------------------------------------
+      - ----------------------------------------------------------------------
    
-   -- put
-      -- PUT https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT/new.html
-      -- request body:none
-      -- response type: 403 Forbidden
-      -- response body
+   - put
+      - PUT https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT/new.html
+      - request body:none
+      - response type: 403 Forbidden
+      - response body
 ```
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <HTML>
@@ -254,9 +254,9 @@ Request ID: RF56dpWkEoFOhBS-hElmTUtLUiWtsDoksfii0Z1_nbble9TWxtAo3Q==
 
 </HTML>
 ```
-      -- ----------------------------------------------------------------------
-      -- PUT https://ghibliapi.herokuapp.com/Films
-      -- request body:
+      - ----------------------------------------------------------------------
+      - PUT https://ghibliapi.herokuapp.com/Films
+      - request body:
 ```
  {
         "id": "2baf70d1-42bb-4437-b551-e5fed5a87efg",
@@ -292,57 +292,57 @@ Request ID: RF56dpWkEoFOhBS-hElmTUtLUiWtsDoksfii0Z1_nbble9TWxtAo3Q==
         "url": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87efg"
     }
 ```
-      -- response type:404 Not Found
-      -- response body
+      - response type:404 Not Found
+      - response body
 ```
 {}
 ```
-      -- ----------------------------------------------------------------------
+      - ----------------------------------------------------------------------
 
-      -- PUT  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
-      -- request body: none
-      -- response type: 200 OK
-      -- response body:
+      - PUT  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
+      - request body: none
+      - response type: 200 OK
+      - response body:
 ```
 {
     "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe"
 }
 ```
-      -- ----------------------------------------------------------------------
+      - ----------------------------------------------------------------------
 
-   -- delete
-      -- DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
-      -- request body: none
-      -- response type: 200 OK
-      -- response body:
+   - delete
+      - DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe
+      - request body: none
+      - response type: 200 OK
+      - response body:
 ```
 {}
 ```
-      -- ----------------------------------------------------------------------
-      -- DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87ABF
-      -- request body: none
-      -- response type: 404 Not Found
-      -- response body:
+      - ----------------------------------------------------------------------
+      - DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87ABF
+      - request body: none
+      - response type: 404 Not Found
+      - response body:
 ```
 {}
 ```
-   -- -----------------------------------------------------------------------
+   - -----------------------------------------------------------------------
 3. API
-   -- twitter(twitter premium API/AccountActivity)
-      -- List active subscripition: Get https://api.twitter.com/1.1/account_activity/all/{{environment}}/subscriptions/list.json
-      -- Create subscription: POST https://api.twitter.com/1.1/account_activity/all/{{environment}}/subscriptions.json
-      -- Check or reset webhook URL: PUT https://api.twitter.com/1.1/account_activity/all/{{environment}}/webhooks/:webhook_id?oauth_consumer_key=your premium App consumer key&oauth_nonce=UqnkudcQe1t&oauth_signature=DOlAihn1wQiWZVrvuGxK0+Dc+Yg=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1625004314&oauth_token=your user access token
-   -- Delete subscription: DELETE https://api.twitter.com/1.1/account_activity/all/{{environment}}/subscriptions/:user_id
+   - twitter(twitter premium API/AccountActivity)
+      - List active subscripition: Get https://api.twitter.com/1.1/account_activity/all/{{environment}}/subscriptions/list.json
+      - Create subscription: POST https://api.twitter.com/1.1/account_activity/all/{{environment}}/subscriptions.json
+      - Check or reset webhook URL: PUT https://api.twitter.com/1.1/account_activity/all/{{environment}}/webhooks/:webhook_id?oauth_consumer_key=your premium App consumer key&oauth_nonce=UqnkudcQe1t&oauth_signature=DOlAihn1wQiWZVrvuGxK0+Dc+Yg=&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1625004314&oauth_token=your user access token
+      - Delete subscription: DELETE https://api.twitter.com/1.1/account_activity/all/{{environment}}/subscriptions/:user_id
 
-   -- META(On-premised API)
-      -- create user: POST {{URL}}/v1/users
-      -- get admin: {{URL}}/v1/users/{{AdminUsername}}
-      -- update user: {{URL}}/v1/users/{{UserUsername}}
-      -- delete use:{{URL}}/v1/users/{{UserUsername}}
+   - META(On-premised API)
+      - create user: POST {{URL}}/v1/users
+      - get admin: {{URL}}/v1/users/{{AdminUsername}}
+      - update user: {{URL}}/v1/users/{{UserUsername}}
+      - delete use:{{URL}}/v1/users/{{UserUsername}}
 
-   -- Design a collection of APIs for a blog website
-      -- create user: POST https://weibo.com/us/v1/users
-      -- get admin: https://weibo.com/us/v1/users/{{AdminUsername}}
-      -- update user: https://weibo.com/us/v1/users/{{UserUsername}}
-      -- delete use:https://weibo.com/us/v1/users/{{UserUsername}}
+   - Design a collection of APIs for a blog website
+      - create user: POST https://weibo.com/us/v1/users
+      - get admin: https://weibo.com/us/v1/users/{{AdminUsername}}
+      - update user: https://weibo.com/us/v1/users/{{UserUsername}}
+      - delete use:https://weibo.com/us/v1/users/{{UserUsername}}
     
