@@ -22,10 +22,11 @@ db.oms_company_address.insertMany ( [
 
 2. POSTMAN
    - GET
-      - **GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe**
+```
+      - GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe**
       - response type: 200 OK
       - response body
-```
+
 {
     "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
     "title": "Castle in the Sky",
@@ -60,16 +61,16 @@ db.oms_company_address.insertMany ( [
     "url": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe"
 }
 ```
-      - ----------------------------------------------------------------------
-      - **GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87dec**
+```
+      - GET https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87dec**
       - response type: 404 Not Found
       - no response body
-      - ----------------------------------------------------------------------
-
-      - **GET https://web.postman.co/workspace**
+```
+```
+      - GET https://web.postman.co/workspace**
       - response type: 401 Unauthorized
       - response body: 
-```
+
 {
     "error": {
         "name": "authenticationError",
@@ -77,11 +78,11 @@ db.oms_company_address.insertMany ( [
     }
 }
 ```
-      - --------------------------------------------------------------
-      - **GET https://ghibliapi.herokuapp.com/Vehicles**
+```
+      - GET https://ghibliapi.herokuapp.com/Vehicles**
       - response type: 200 OK
       - response body: 
-```
+
 [
     {
         "id": "4e09b023-f650-4747-9ab9-eacf14540cfb",
@@ -121,11 +122,10 @@ db.oms_company_address.insertMany ( [
     }
 ]
 ```
-      - -----------------------------------------------------------------
-      - **GET https://www.liaoxuefeng.com/wiki**
+```
+      - GET https://www.liaoxuefeng.com/wiki
       - response type: 404 NOT FOUND
       - response body:
-```
 {
     "timestamp": "2022-06-17T18:53:32.547+00:00",
     "status": 404,
@@ -137,9 +137,9 @@ db.oms_company_address.insertMany ( [
 
 
    - post
-      - **POST https://ghibliapi.herokuapp.com/Vehicles**
-      - request body
 ```
+      - POST https://ghibliapi.herokuapp.com/Vehicles**
+      - request body
 
  {
         "id": "4e09b023-f650-4747-9ab9-eacf14540abc",
@@ -155,7 +155,6 @@ db.oms_company_address.insertMany ( [
     }
       - response type: 201 Created
       - response body:
-```
   
  {
         "id": "4e09b023-f650-4747-9ab9-eacf14540abc",
@@ -170,11 +169,11 @@ db.oms_company_address.insertMany ( [
         "url": "https://ghibliapi.herokuapp.com/vehicles/4e09b023-f650-4747-9ab9-eacf14540abc"
     }
 ```
-      - --------------------------------------------------------------------
-      - **POST https://www.liaoxuefeng.com/wiki**
+```
+      - POST https://www.liaoxuefeng.com/wiki**
       - response type: 404 NOT FOUND
       - response body:
-```
+
 {
     "timestamp": "2022-06-17T18:56:01.909+00:00",
     "status": 404,
@@ -182,49 +181,50 @@ db.oms_company_address.insertMany ( [
     "path": "/wiki"
 }
 ```
-      - ---------------------------------------------------------------------
+```     
 
-      - **POST https://ghibliapi.herokuapp.com/#section/Use-Case**
+      - POST https://ghibliapi.herokuapp.com/#section/Use-Case**
       - response type: 404 NOT FOUND
       - response body:
-```
+
 {}
 ```
-      - ------------------------------------------------------------------
-
-      - **POST https://ghibliapi.herokuapp.com/Species**
+```
+    
+      - POST https://ghibliapi.herokuapp.com/Species**
       - response type: 201 Created
       - response body:
-```
+
 {
     "id": "203c49c5-7eed-4c98-ade7-7d00b802511b"
 }
 ```
-      - ----------------------------------------------------------------------
+     
 
-
-      - **POST https://ghibliapi.herokuapp.com/Species**
-      - request body
 ```
+      - POST https://ghibliapi.herokuapp.com/Species**
+      - request body
+
 {
     "id": "203c49c5-7eed-4c98-ade7-7d00b8025220"
 }
-```
+
       - response type: 201 Created
       - response body:
-```
+
 {
     "id": "203c49c5-7eed-4c98-ade7-7d00b802511b"
 }
 ```
-      - ----------------------------------------------------------------------
+
    
    - put
-      - **PUT https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT/new.html**
+```
+      - PUT https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT/new.html
       - request body:none
       - response type: 403 Forbidden
       - response body
-```
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <HTML>
 
@@ -255,10 +255,11 @@ Request ID: RF56dpWkEoFOhBS-hElmTUtLUiWtsDoksfii0Z1_nbble9TWxtAo3Q==
 
 </HTML>
 ```
-      - ----------------------------------------------------------------------
-      - **PUT https://ghibliapi.herokuapp.com/Films**
-      - request body:
 ```
+
+      - PUT https://ghibliapi.herokuapp.com/Films**
+      - request body:
+
  {
         "id": "2baf70d1-42bb-4437-b551-e5fed5a87efg",
         "title": "Castle in the Sky",
@@ -292,42 +293,43 @@ Request ID: RF56dpWkEoFOhBS-hElmTUtLUiWtsDoksfii0Z1_nbble9TWxtAo3Q==
         ],
         "url": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87efg"
     }
-```
+
       - response type:404 Not Found
       - response body
-```
+
 {}
 ```
-      - ----------------------------------------------------------------------
+```
 
-      - **PUT  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe**
+      - PUT  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe**
       - request body: none
       - response type: 200 OK
       - response body:
-```
+
 {
     "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe"
 }
 ```
-      - ----------------------------------------------------------------------
+```
 
    - delete
       - **DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe**
       - request body: none
       - response type: 200 OK
       - response body:
-```
+
 {}
+
 ```
-      - ----------------------------------------------------------------------
+```
       - **DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87ABF**
       - request body: none
       - response type: 404 Not Found
       - response body:
-```
+
 {}
 ```
-   - -----------------------------------------------------------------------
+
 3. API
    - twitter(twitter premium API/AccountActivity)
       - List active subscripition: Get https://api.twitter.com/1.1/account_activity/all/{{environment}}/subscriptions/list.json
