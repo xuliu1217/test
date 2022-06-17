@@ -310,9 +310,10 @@ Request ID: RF56dpWkEoFOhBS-hElmTUtLUiWtsDoksfii0Z1_nbble9TWxtAo3Q==
     "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe"
 }
 ```
-```
+
 
    - delete
+```
       - DELETE  https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe**
       - request body: none
       - response type: 200 OK
