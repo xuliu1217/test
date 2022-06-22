@@ -1,6 +1,6 @@
 1. Controller
-   - @RestController: use it in all controller class.
-   - @RequestingMapping: followed by urn, show that it is a request.
+- @RestController: use it in all controller class.
+- @RequestingMapping: followed by urn, show that it is a request.
 ```
 @RestController
 @RequestMapping("/api/v4/posts")
