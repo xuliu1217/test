@@ -21,6 +21,33 @@ public ResponseEntity<PostDto> createPost(@RequestBody PostDto postDto)
  @PostMapping
     public ResponseEntity<PostDto> createPost(@RequestBody PostDto postDto)
 ```
+- @GetMapping: map to a get request
+- @PathVariable: a part of the url path
+```
+@GetMapping("/{id}")
+    public ResponseEntity<PostDto> getPostById(@PathVariable(name = "id") long id)
+```
+- @RequestParam: parameter of request body. In the url, begin with "?"
+```
+public PostResponse getAllPosts(
+            @RequestParam(value = "pageNo", defaultValue = AppConstants.DEFAULT_PAGE_NUMBER, required = false) int pageNo,
+            @RequestParam(value = "pageSize", defaultValue = AppConstants.DEFAULT_PAGE_SIZE, required = false) int pageSize,
+            @RequestParam(value = "sortBy", defaultValue = AppConstants.DEFAULT_SORT_BY, required = false) String sortBy,
+            @RequestParam(value = "sortDir", defaultValue = AppConstants.DEFAULT_SORT_DIR, required = false) String sortDir
+    )
+```
+- @PutMapping: map to a put request
+```
+@PutMapping("/{id}")
+    public ResponseEntity<PostDto> updatePostById(@RequestBody PostDto postDto, @PathVariable(name = "id") long id){}
+```
+- @DeleteMapping: map to a delete request
+```
+@DeleteMapping("/{id}")
+    public ResponseEntity<String> deletePost(@PathVariable(name = "id") long id){}
+```
+- @ResponseStatus: response status
+
 2. Service
 - @Service:use it in all Service class.
 ```
